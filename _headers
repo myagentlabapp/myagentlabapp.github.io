@@ -1,0 +1,11 @@
+/robots.txt
+  Content-Type: text/plain
+
+/sitemap.xml
+  Content-Type: application/xml
+
+/BingSiteAuth.xml
+  Content-Type: application/xml
+
+/_redirects
+  Content-Type: text/plain
