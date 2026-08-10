@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://myagentlabapp.github.io/sitemap.xml
