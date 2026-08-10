@@ -127,6 +127,19 @@
     @media(max-width:768px){.nav-links{display:none}.stats{grid-template-columns:repeat(2,1fr)}.features-grid{grid-template-columns:1fr}.pricing-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.hero{padding:100px 0 60px}.code-body{font-size:12px}}
     @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"什么是 AI API 中转站？","acceptedAnswer":{"@type":"Answer","text":"AI API 中转站将 OpenAI、Anthropic、Google 等多家 AI 厂商的 API 整合到统一入口，用户只需一个 API Key 就能调用所有大模型。智体工坊 MyAgentLab 就是这样的中转站，完全兼容 OpenAI API 格式。"}},
+      {"@type":"Question","name":"智体工坊的 API 兼容 OpenAI 格式吗？","acceptedAnswer":{"@type":"Answer","text":"完全兼容。支持 /v1/chat/completions、/v1/embeddings、/v1/images/generations 等标准端点。Python/Node.js OpenAI SDK、LangChain、Dify、FastGPT 等均可直接使用。"}},
+      {"@type":"Question","name":"比直连官方 API 便宜多少？","acceptedAnswer":{"@type":"Answer","text":"比直连 OpenAI/Claude/Google 官方 API 最高便宜 50%-90%。按量计费，充值即用。"}},
+      {"@type":"Question","name":"国内可以直接访问吗？","acceptedAnswer":{"@type":"Answer","text":"可以。智体工坊提供国内优质线路直连，无需翻墙即可调用 GPT、Claude、Gemini 等海外大模型 API。"}}
+    ]
+  }
+  </script>
 </head>
 <body>
 <nav id="nav">
@@ -286,7 +299,7 @@ response = client.chat.completions.<span class="code-fn">create</span>(<br>
       <h2 style="font-size:16px;color:var(--text-secondary);margin-bottom:16px">AI API 中转站 &amp; 大模型 API 聚合平台</h2>
       <p>智体工坊 MyAgentLab 提供 <strong>AI API 中转站</strong>服务，支持 GPT-4o、GPT-4o mini、o1、o3、Claude 4 Sonnet、Claude 3.5 Haiku、Gemini 2.0 Flash、Gemini 2.5 Pro、DeepSeek V3、DeepSeek R1、GLM-4、通义千问 Qwen Max、Doubao 豆包、Moonshot 月之暗面、Llama 3.3、Mistral Large、DALL·E 3、Stable Diffusion 等主流 AI 大模型的 API 接入。</p>
       <p>完全兼容 OpenAI API 格式，只需更换 API Base URL 和 API Key 即可零代码迁移。提供 <strong>大模型 API 代理</strong>、<strong>API 分发</strong>、<strong>多渠道容灾</strong>能力，国内直连毫秒级响应。按量计费，充值即用，比直连 OpenAI/Anthropic/Google 官方 API 更便宜。</p>
-      <p>关键词：AI API | 大模型 API | API 中转站 | OpenAI API | GPT API | Claude API | Gemini API | DeepSeek API | Qwen API | GLM API | 智谱 API | 通义千问 API | 豆包 API | Moonshot API | API 聚合 | API 代理 | AI 模型聚合 | 中转 API | 便宜 API | 低价 API | 国内 API | ChatGPT API | 大模型中转站 | AI 接口 | LLM API | 人工智能 API | GPT-4o API | API key 购买 | openai 兼容 | 大模型接口 | 国产大模型 API | 海外大模型 API | API 分发 | 模型市场</p>
+      <p>关键词：AI API | 大模型 API | API 中转站 | OpenAI API | GPT API | GPT-4 API | GPT-4o API | Claude API | Claude 4 API | Gemini API | DeepSeek API | DeepSeek R1 API | Qwen API | 通义千问 API | GLM API | 智谱 API | 豆包 API | Doubao API | Moonshot API | Kimi API | Llama API | Mistral API | DALL·E API | Stable Diffusion API | FLUX API | Whisper API | TTS API | API 聚合 | API 代理 | API 分发 | AI 模型聚合 | 中转 API | 中转站 API | 便宜 API | 低价 API | 便宜 GPT API | 便宜 Claude API | 国内 API | 国内 GPT API | 国内 Claude API | ChatGPT API | ChatGPT 中转 | 大模型中转站 | AI 接口 | LLM API | 大语言模型 API | 人工智能 API | API key 购买 | API key 充值 | openai 兼容 | openai 替代 | api base url | 大模型接口 | 国产大模型 API | 海外大模型 API | 模型市场 | LangChain API | Dify API | FastGPT API | NextChat API | LobeChat API | AI 网关 | API 网关 | 多模型 API | 统一 API | one api | new api | api 聚合平台 | api 转发 | 镜像 api | 逆向 api | 免费 api | 白嫖 api | api 代理服务 | 大模型代理 | GPT 代理 | Claude 代理 | 国内直连 GPT | 国内直连 Claude | 不翻墙用 GPT | 不翻墙用 Claude</p>
     </div>
   </div>
 </section>
