@@ -217,6 +217,27 @@
       <div class="model-tag">Mistral Large <span class="provider">Mistral</span></div>
       <div class="model-tag">DALL·E 3 <span class="provider">OpenAI</span></div>
       <div class="model-tag">Stable Diffusion <span class="provider">Stability</span></div>
+      <div class="model-tag">o4 mini <span class="provider">OpenAI</span></div>
+      <div class="model-tag">Claude 4 Opus <span class="provider">Anthropic</span></div>
+      <div class="model-tag">Claude 3.5 Sonnet <span class="provider">Anthropic</span></div>
+      <div class="model-tag">Gemini 1.5 Pro <span class="provider">Google</span></div>
+      <div class="model-tag">DeepSeek Coder <span class="provider">DeepSeek</span></div>
+      <div class="model-tag">GLM-4V <span class="provider">智谱</span></div>
+      <div class="model-tag">GLM-4-Flash <span class="provider">智谱</span></div>
+      <div class="model-tag">Qwen Plus <span class="provider">阿里</span></div>
+      <div class="model-tag">Qwen Turbo <span class="provider">阿里</span></div>
+      <div class="model-tag">Doubao Pro <span class="provider">字节</span></div>
+      <div class="model-tag">Doubao Lite <span class="provider">字节</span></div>
+      <div class="model-tag">Kimi <span class="provider">月之暗面</span></div>
+      <div class="model-tag">Llama 3.1 405B <span class="provider">Meta</span></div>
+      <div class="model-tag">Command R+ <span class="provider">Cohere</span></div>
+      <div class="model-tag">Yi Large <span class="provider">零一万物</span></div>
+      <div class="model-tag">MiniMax <span class="provider">MiniMax</span></div>
+      <div class="model-tag">Baichuan <span class="provider">百川</span></div>
+      <div class="model-tag">Spark v3 <span class="provider">讯飞星火</span></div>
+      <div class="model-tag">FLUX <span class="provider">Black Forest</span></div>
+      <div class="model-tag">Whisper <span class="provider">OpenAI</span></div>
+      <div class="model-tag">TTS <span class="provider">OpenAI</span></div>
       <div class="model-tag" style="color:var(--accent)">持续接入中…</div>
     </div>
   </div>
@@ -281,6 +302,105 @@ response = client.chat.completions.<span class="code-fn">create</span>(<br>
         </ul>
         <a href="mailto:github@myagentlab.app" class="btn btn-ghost" style="width:100%">联系我们</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding:80px 0">
+  <div class="container">
+    <h2 class="section-title">常见问题</h2>
+    <div style="max-width:760px;margin:40px auto 0">
+      <details style="margin-bottom:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px">
+        <summary style="cursor:pointer;font-size:16px;font-weight:600;color:var(--text)">什么是 AI API 中转站？</summary>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px">AI API 中转站（也称为 API 代理、API 聚合平台）是一种服务，它将 OpenAI、Anthropic、Google 等多家 AI 厂商的 API 接口整合到统一的入口。用户只需一个 API Key，就能调用所有大模型，无需分别注册每个平台。智体工坊 MyAgentLab 就是这样一个中转站，完全兼容 OpenAI API 格式，更换 Base URL 即可使用。</p>
+      </details>
+      <details style="margin-bottom:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px">
+        <summary style="cursor:pointer;font-size:16px;font-weight:600;color:var(--text)">智体工坊的 API 兼容 OpenAI 格式吗？</summary>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px">完全兼容。智体工坊使用 OpenAI 兼容接口，支持 /v1/chat/completions、/v1/embeddings、/v1/images/generations 等标准端点。Python/Node.js 的 OpenAI SDK、LangChain、LlamaIndex、Dify、FastGPT、NextChat 等主流框架和工具均可直接使用，只需修改 API Base URL 和 API Key。</p>
+      </details>
+      <details style="margin-bottom:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px">
+        <summary style="cursor:pointer;font-size:16px;font-weight:600;color:var(--text)">比直连 OpenAI / Claude 官方 API 便宜多少？</summary>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px">智体工坊的大模型 API 价格比直连官方最高便宜 50%-90%。例如 GPT-4o 官方价格 $5/百万 Token，通过中转站可节省大量费用。DeepSeek、Qwen、GLM 等国产模型价格更低。具体价格请参考定价表，按量计费，充值即用。</p>
+      </details>
+      <details style="margin-bottom:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px">
+        <summary style="cursor:pointer;font-size:16px;font-weight:600;color:var(--text)">支持哪些编程语言和 SDK？</summary>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px">支持所有兼容 OpenAI API 的 SDK 和工具，包括：Python openai 库、Node.js openai 库、Go、Java、Rust、PHP、C# 等。同时也支持 LangChain、LlamaIndex、Dify、FastGPT、NextChat、ChatGPT-Next-Web、LobeChat、Open WebUI 等主流 AI 应用框架。</p>
+      </details>
+      <details style="margin-bottom:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px">
+        <summary style="cursor:pointer;font-size:16px;font-weight:600;color:var(--text)">国内可以直接访问吗？需要翻墙吗？</summary>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px">可以。智体工坊提供国内优质线路直连，无需翻墙即可调用 GPT、Claude、Gemini 等海外大模型 API。平均响应延迟低于 100ms，比直连官方 API 更快。同时也支持 DeepSeek、Qwen、GLM 等国产模型。</p>
+      </details>
+      <details style="margin-bottom:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px">
+        <summary style="cursor:pointer;font-size:16px;font-weight:600;color:var(--text)">如何获取 API Key？</summary>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px">注册智体工坊账号后，在控制台创建 API Key 即可使用。支持多 Key 管理、用量监控、速率限制等功能。充值后立即到账，按量计费，用多少付多少。</p>
+      </details>
+      <details style="margin-bottom:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px">
+        <summary style="cursor:pointer;font-size:16px;font-weight:600;color:var(--text)">支持图像生成和语音模型吗？</summary>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px">支持。智体工坊不仅提供文本对话模型（GPT-4o、Claude、DeepSeek 等），还支持图像生成模型（DALL·E 3、Stable Diffusion、FLUX）、语音模型（Whisper 语音识别、TTS 语音合成）、以及多模态模型（GPT-4o Vision、Gemini Vision、GLM-4V）。</p>
+      </details>
+      <details style="margin-bottom:16px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px">
+        <summary style="cursor:pointer;font-size:16px;font-weight:600;color:var(--text)">和 One API / New API 有什么区别？</summary>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px">智体工坊基于 New API 构建，但提供了更完善的中文界面、微信支付、更多模型接入、以及更好的国内线路优化。相比自建 One API / New API，使用智体工坊无需自己维护服务器和上游渠道。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="usecases" style="padding:80px 0;background:var(--bg-elevated)">
+  <div class="container">
+    <h2 class="section-title">应用场景</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:40px">
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px">
+        <h3 style="font-size:17px;margin-bottom:12px">🤖 AI 对话机器人</h3>
+        <p style="color:var(--text-secondary);font-size:14px">使用 GPT-4o、Claude、DeepSeek 等模型构建智能客服、聊天机器人、AI 助手。兼容 OpenAI API，LangChain / Dify / FastGPT 直接对接。</p>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px">
+        <h3 style="font-size:17px;margin-bottom:12px">💻 代码生成与辅助</h3>
+        <p style="color:var(--text-secondary);font-size:14px">通过 DeepSeek Coder、Claude、GPT-4o 实现代码补全、代码审查、Bug 修复。支持 GitHub Copilot 替代方案。</p>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px">
+        <h3 style="font-size:17px;margin-bottom:12px">🎨 AI 图像生成</h3>
+        <p style="color:var(--text-secondary);font-size:14px">使用 DALL·E 3、Stable Diffusion、FLUX 生成高质量图片。支持文生图、图生图、图像编辑等场景。</p>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px">
+        <h3 style="font-size:17px;margin-bottom:12px">📄 文档分析与摘要</h3>
+        <p style="color:var(--text-secondary);font-size:14px">利用 Gemini 2.5 Pro、Claude 4 的超长上下文能力，处理长文档分析、论文摘要、合同审查等任务。</p>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px">
+        <h3 style="font-size:17px;margin-bottom:12px">🔧 企业 API 集成</h3>
+        <p style="color:var(--text-secondary);font-size:14px">统一 API 网关接入，多渠道容灾，SLA 保障。适合企业级 AI 应用开发，支持私有化部署。</p>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px">
+        <h3 style="font-size:17px;margin-bottom:12px">📊 数据分析与 RAG</h3>
+        <p style="color:var(--text-secondary);font-size:14px">结合 Embedding 模型和 LLM 构建知识库问答、RAG 系统。支持 LangChain / LlamaIndex 生态。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="compare" style="padding:80px 0">
+  <div class="container">
+    <h2 class="section-title">为什么选择智体工坊？</h2>
+    <div style="max-width:760px;margin:40px auto 0">
+      <table style="width:100%;border-collapse:collapse;font-size:14px">
+        <thead>
+          <tr style="border-bottom:2px solid var(--border)">
+            <th style="text-align:left;padding:12px 16px;color:var(--text-secondary)">对比项</th>
+            <th style="text-align:center;padding:12px 16px;color:var(--accent);font-weight:700">智体工坊</th>
+            <th style="text-align:center;padding:12px 16px;color:var(--text-muted)">直连官方</th>
+            <th style="text-align:center;padding:12px 16px;color:var(--text-muted)">其他中转站</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 16px">国内访问</td><td style="text-align:center;padding:12px 16px;color:var(--green)">直连</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">需翻墙</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">直连</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 16px">模型数量</td><td style="text-align:center;padding:12px 16px;color:var(--green)">40+</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">单一厂商</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">10-20</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 16px">API 兼容</td><td style="text-align:center;padding:12px 16px;color:var(--green)">OpenAI 格式</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">各自格式</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">部分兼容</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 16px">价格</td><td style="text-align:center;padding:12px 16px;color:var(--green)">省 50%-90%</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">原价</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">省 30%-50%</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 16px">多渠道容灾</td><td style="text-align:center;padding:12px 16px;color:var(--green)">自动切换</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">无</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">部分</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 16px">响应延迟</td><td style="text-align:center;padding:12px 16px;color:var(--green)">&lt;100ms</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">200-500ms</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">100-300ms</td></tr>
+          <tr><td style="padding:12px 16px">最低充值</td><td style="text-align:center;padding:12px 16px;color:var(--green)">10元起</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">$5起</td><td style="text-align:center;padding:12px 16px;color:var(--text-muted)">50元起</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
