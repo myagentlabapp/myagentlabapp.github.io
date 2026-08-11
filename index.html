@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://myagentlab.app">
   <link rel="canonical" href="https://myagentlab.app">
-  <link rel="icon" href="/logo.png" type="image/png"><rect width='100' height='100' rx='22' fill='%230a0a0a'/><text x='50' y='68' font-size='56' font-weight='bold' text-anchor='middle' fill='%236366f1' font-family='system-ui'>M</text></svg>">
+  <link rel="icon" href="/logo.png" type="image/png">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -59,6 +59,7 @@
     .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:var(--max-w);margin:0 auto;padding:0 24px}
     .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
     .logo-mark{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#6366f1,#4f46e5);display:flex;align-items:center;justify-content:center;font-size:18px;color:white;font-weight:800}
+    .logo-img{width:32px;height:32px;border-radius:8px;object-fit:cover}
     .nav-links{display:flex;align-items:center;gap:32px}
     .nav-links a{color:var(--text-secondary);font-size:14px;transition:color .2s}
     .nav-links a:hover{color:var(--text)}
@@ -145,7 +146,7 @@
 <body>
 <nav id="nav">
   <div class="nav-inner">
-    <a href="/" class="logo"><div class="logo-mark">M</div><span>智体工坊</span></a>
+    <a href="/" class="logo"><img src="/logo.png" alt="智体工坊" class="logo-img"><span>智体工坊</span></a>
     <div class="nav-links">
       <a href="#features">产品特性</a>
       <a href="#models">支持模型</a>
@@ -429,7 +430,7 @@ response = client.chat.completions.<span class="code-fn">create</span>(<br>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="logo"><div class="logo-mark">M</div><span>智体工坊</span></div>
+        <div class="logo"><img src="/logo.png" alt="智体工坊" class="logo-img"><span>智体工坊</span></div>
         <p>AI 模型聚合 API 平台，让 AI 开发更简单。</p>
       </div>
       <div class="footer-col">
